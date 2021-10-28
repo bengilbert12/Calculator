@@ -1,5 +1,5 @@
 from tkinter import *
-from typing import Match
+
  
 root = Tk()
 root.title("Simple Calculator")
@@ -19,7 +19,7 @@ def button_add():
     global f_num
     global math
     math = "addition"
-    f_num = first_number
+    f_num = float(first_number)
     e.delete(0, END)
     
  
@@ -41,7 +41,7 @@ def button_subtract():
     global f_num
     global math
     math = "subtraction"
-    f_num = first_number
+    f_num = float(first_number)
     e.delete(0, END)
     
  
@@ -50,7 +50,7 @@ def button_multiply():
     global f_num
     global math
     math = "multiplication"
-    f_num = first_number
+    f_num = float(first_number)
     e.delete(0, END)
     
  
@@ -59,7 +59,7 @@ def button_divide():
     global f_num
     global math
     math = "division"
-    f_num = first_number
+    f_num = float(first_number)
     e.delete(0, END)
     
  
